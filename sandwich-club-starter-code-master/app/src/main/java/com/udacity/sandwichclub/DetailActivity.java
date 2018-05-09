@@ -80,12 +80,12 @@ public class DetailActivity extends AppCompatActivity {
 
         List<String> ingredients = sw.getIngredients();
         for (String i : ingredients) {
-           mIngredients.append(i + "\n");
+           mIngredients.append("- " + i + "\n");
         }
 
         List<String> alsoKnownAs = sw.getAlsoKnownAs();
         for (String a : alsoKnownAs) {
-            mAlsoKnown.append(a + "\n");
+            mAlsoKnown.append("- " + a + "\n");
         }
     }
 }
